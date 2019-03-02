@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 134072729}
   - component: {fileID: 134072728}
   - component: {fileID: 134072727}
+  - component: {fileID: 134072731}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -280,6 +281,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &134072731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134072726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8e47308c91557448896a01fffeb8e83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &420882691
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +459,6 @@ GameObject:
   - component: {fileID: 1060455441}
   - component: {fileID: 1060455440}
   - component: {fileID: 1060455439}
-  - component: {fileID: 1060455442}
   m_Layer: 5
   m_Name: QR
   m_TagString: Untagged
@@ -514,7 +526,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1060455442}
+      - m_Target: {fileID: 134072731}
         m_MethodName: QR
         m_Mode: 1
         m_Arguments:
@@ -564,18 +576,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060455437}
   m_CullTransparentMesh: 0
---- !u!114 &1060455442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060455437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8e47308c91557448896a01fffeb8e83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1135146937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,8 +1601,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2050411246}
-        m_MethodName: GoToMenu
+      - m_Target: {fileID: 134072731}
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

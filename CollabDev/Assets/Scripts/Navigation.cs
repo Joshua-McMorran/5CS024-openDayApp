@@ -4,9 +4,9 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-public class ReturnToMenu : MonoBehaviour
+public class Navigation : MonoBehaviour
 {
-    public void goBack()
+    public void MainMenu()
     {
         SceneManager.LoadScene("MenuPage");
     }
@@ -14,5 +14,15 @@ public class ReturnToMenu : MonoBehaviour
     public void QR()
     {
         SceneManager.LoadScene("QR-Reader");
+    }
+
+    public void AppPage()
+    {
+        SceneManager.LoadScene("AppPage");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
