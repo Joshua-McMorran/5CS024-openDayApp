@@ -23,6 +23,8 @@ public class Navigation : MonoBehaviour
 
     public void QuitGame()
     {
+        //Gives feedback for the method working
+        Debug.Log("Exited app Sucessful");
         Application.Quit();
     }
 }
