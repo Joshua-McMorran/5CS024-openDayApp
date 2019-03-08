@@ -11,6 +11,7 @@ public class QRController : MonoBehaviour
     private bool camAvailable;
     private WebCamTexture backCam;
     private Texture defaultBackground;
+    private bool canScanQR = true;
 
     public RawImage background;
     public AspectRatioFitter fit;
@@ -59,8 +60,12 @@ public class QRController : MonoBehaviour
         float scaleY = backCam.videoVerticallyMirrored ? -1f : 1f;
         background.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
 
+        if (!canScanQR) {
+            return;
+        }
         try
         {
+            Debug.Log("Searching for QR");
             IBarcodeReader barcodeReader = new BarcodeReader();
             // decode the current frame
             var result = barcodeReader.Decode(backCam.GetPixels32(),
@@ -70,12 +75,19 @@ public class QRController : MonoBehaviour
                 //Debug.Log("DECODED TEXT FROM QR: " + result.Text);
                 SceneManager.LoadScene("AppPage");
             }
-
+            StartCoroutine(SlowDown());
         }
         catch (Exception ex) { Debug.LogWarning(ex.Message); }
 
         //int orient = backCam.videoRotationAngle;
         //background.rectTransform.localEulerAngles = new Vector3(0, 0, );
+    }
+
+    IEnumerator SlowDown()
+    {
+        canScanQR = false;
+        yield return new WaitForSeconds(2);
+        canScanQR = true;
     }
 }
 
