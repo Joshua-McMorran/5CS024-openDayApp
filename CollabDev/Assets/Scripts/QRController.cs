@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using ZXing;
 
@@ -57,6 +58,21 @@ public class QRController : MonoBehaviour
 
         float scaleY = backCam.videoVerticallyMirrored ? -1f : 1f;
         background.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
+
+        try
+        {
+            IBarcodeReader barcodeReader = new BarcodeReader();
+            // decode the current frame
+            var result = barcodeReader.Decode(backCam.GetPixels32(),
+              backCam.width, backCam.height);
+            if (result != null)
+            {
+                //Debug.Log("DECODED TEXT FROM QR: " + result.Text);
+                SceneManager.LoadScene("AppPage");
+            }
+
+        }
+        catch (Exception ex) { Debug.LogWarning(ex.Message); }
 
         //int orient = backCam.videoRotationAngle;
         //background.rectTransform.localEulerAngles = new Vector3(0, 0, );
