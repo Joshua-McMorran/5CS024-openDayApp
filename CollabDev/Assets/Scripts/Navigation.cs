@@ -21,6 +21,11 @@ public class Navigation : MonoBehaviour
         SceneManager.LoadScene("AppPage");
     }
 
+    public void Template()
+    {
+        SceneManager.LoadScene("Template");
+    }
+
     public void QuitGame()
     {
         //Gives feedback for the method working

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QR-Reader.unity
     guid: d0cb6b29d5b0890419c069045a76f677
+  - enabled: 1
+    path: Assets/Scenes/Template.unity
+    guid: a304518897c85ca46a623ae3e5dfed5e
   m_configObjects: {}
