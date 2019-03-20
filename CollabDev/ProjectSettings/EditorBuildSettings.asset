@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Template.unity
     guid: a304518897c85ca46a623ae3e5dfed5e
+  - enabled: 1
+    path: Assets/Scenes/PersonalDetails.unity
+    guid: 505b2514df315554d9de9a4289565fc5
   m_configObjects: {}

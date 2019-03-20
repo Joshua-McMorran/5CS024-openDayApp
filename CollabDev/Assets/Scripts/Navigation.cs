@@ -26,6 +26,11 @@ public class Navigation : MonoBehaviour
         SceneManager.LoadScene("Template");
     }
 
+    public void PDetails()
+    {
+        SceneManager.LoadScene("PersonalDetails");
+    }
+
     public void QuitGame()
     {
         //Gives feedback for the method working
