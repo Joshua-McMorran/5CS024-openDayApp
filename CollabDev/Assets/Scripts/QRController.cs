@@ -72,8 +72,16 @@ public class QRController : MonoBehaviour
               backCam.width, backCam.height);
             if (result != null)
             {
-                //Debug.Log("DECODED TEXT FROM QR: " + result.Text);
-                SceneManager.LoadScene("AppPage");
+                Debug.Log("DECODED TEXT FROM QR: " + result.Text);
+                if (result.Text == "IM GAY")
+                {
+                    SceneManager.LoadScene("CODEA");
+                }
+                else
+                {
+                    Debug.Log("DECODED TEXT FROM QR: " + result.Text);
+                }
+                
             }
             StartCoroutine(SlowDown());
         }

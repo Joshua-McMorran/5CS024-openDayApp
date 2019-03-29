@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PersonalDetails.unity
     guid: 505b2514df315554d9de9a4289565fc5
+  - enabled: 1
+    path: Assets/Scenes/CODEA.unity
+    guid: a82467a22339845489ba153c4106fe10
   m_configObjects: {}
