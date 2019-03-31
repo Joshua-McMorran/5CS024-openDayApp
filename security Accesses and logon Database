@@ -1,0 +1,27 @@
+Security Accesses and Logon Database
+The following suggestions offer ways of controlling access to database account. The actions range from confining logins to the account to removing the account completely. Joining several of these suggestions together is good practice as it supports a explains in depth style. The bottom stages are very important information for database designer to try best to safe and secure database.
+•	Change the default passwords and create a strong password. The Database Configuration Assistant (DBCA), provides a shortcut for making the initial passwords during the database creation. That is allowed the database developers to use the same password for all the account. The database developers need to make sure do not choose this option. Developers need to create a strong and different password for each diagram. 
+•	Database developer need to create an impossible password. After installation, this little trick which is covered in the upcoming “Oracle Password” section, maintains the account objects and privileges, but prevent anyone from directly logging in because the password can’t be complete. 
+•	Create a database log -on start to check for specific user that don’t want to log in and fail the trigger if one tries. A failed log-on trigger prevents a user from logging in. This technique doesn’t work for certain privileged user, such as SYS (SYSDBA) and users with the ADMINISTER DATABASE TRIGGER SYSTEM privilege. However, it may be helpful to only allow these privileged users into the database. As such, this is an excellent little trick for locking out all other users. 
+•	Revoke   Create session and/ or the connect role. Removing the privilege to log in to the database in an obvious way to prevent someone from logging in in to an account. Note this will prevent both hackers and legitimate users and application from logging in to the account. It doesn’t matter if they know the password, the privilege to log on has been removed. 
+•	Lock the account. This is a chosen option because it keeps all the data objects and connected measures while preventing people from logging in. the effect to this is similar to revoking the privilege to log on to the database, but no privileges have to be revoked. This ability was introduced with the Oracle9i Database.
+
+
+How Checking for Weak or Default Passwords
+There are a few important stages for password are often the weak link in the security chain. A poorly chosen password, or well-known default password that has not been changed, is one of the massive security risks to a database. The database developers need to help manage this risk use the following program, which compares a list of known username and password verifiers to the users and verifiers actually being used in the database. The list is creating by a helper program. 
+	
+To start, a table is created that stores usernames, their plaintext password, and the respective computed password verifiers.
+
+1-	Sec_mgr@KNOX10g> CREATE TABLAE PASSWORD
+2-	(
+3-	username VARCHAR2 (30),
+4-	password VARCHAR2 (30),
+5-	verifier VARCHAR2 (30)
+6-	)
+7-	/
+                Table created.
+                 sec_mgr@KNOX10g> ALTER TABLE PASSWORDS ADD (
+               2                   CONSTRAINT PWD_PK PRIMARY KEY (PASSWORD,           USERNAME) ) ;
+Table altered.
+sec_mgr@KNOX10g CREATE INDEX VERIFIER ON PASSWORDS 
+       2  (USERNMAE, VERIFIER); 
