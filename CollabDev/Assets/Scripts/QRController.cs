@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -76,6 +75,22 @@ public class QRController : MonoBehaviour
                 if (result.Text == "IM GAY")
                 {
                     SceneManager.LoadScene("CODEA");
+                }
+                if(result.Text == "openDeck")
+                {
+                    SceneManager.LoadScene("openDeck");
+                }
+                if (result.Text =="MCI201a")
+                {
+                    SceneManager.LoadScene("MCI201a");
+                }
+                if (result.Text =="MCI204b")
+                {
+                    SceneManager.LoadScene("MCI204b");
+                }
+                if (result.Text == "MCI201C")
+                {
+                    SceneManager.LoadScene("MCI204C");
                 }
                 else
                 {
