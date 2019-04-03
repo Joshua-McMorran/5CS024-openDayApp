@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CODEA.unity
     guid: a82467a22339845489ba153c4106fe10
+  - enabled: 1
+    path: Assets/Scenes/openDeck.unity
+    guid: 2b33320f73ccba34794574b9e0bd7d6a
+  - enabled: 1
+    path: Assets/Scenes/MCI201a.unity
+    guid: 48f4e4a5f20bfbb4480d65acbbaa1ff1
+  - enabled: 1
+    path: Assets/Scenes/MCI204b.unity
+    guid: 5641005fd773af2479816652fa759649
+  - enabled: 1
+    path: Assets/Scenes/MCI204c.unity
+    guid: ecec24e8e2ee8b54191462546e410b89
   m_configObjects: {}

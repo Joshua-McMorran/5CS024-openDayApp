@@ -31,6 +31,31 @@ public class Navigation : MonoBehaviour
         SceneManager.LoadScene("PersonalDetails");
     }
 
+    public void Special()
+    {
+        SceneManager.LoadScene("CODEA");
+    }
+
+    public void OpenDeck()
+    {
+        SceneManager.LoadScene("openDeck");
+    }
+
+    public void MCI201a()
+    {
+        SceneManager.LoadScene("MCI201a");
+    }
+
+    public void MCI204b()
+    {
+        SceneManager.LoadScene("MCI204b");
+    }
+
+    public void MCI204c()
+    {
+        SceneManager.LoadScene("MCI204c");
+    }
+
     public void QuitGame()
     {
         //Gives feedback for the method working

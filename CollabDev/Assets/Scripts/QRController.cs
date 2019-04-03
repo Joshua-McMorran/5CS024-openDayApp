@@ -90,7 +90,7 @@ public class QRController : MonoBehaviour
                 }
                 if (result.Text == "MCI201C")
                 {
-                    SceneManager.LoadScene("MCI204C");
+                    SceneManager.LoadScene("MCI204c");
                 }
                 else
                 {
