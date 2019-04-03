@@ -1007,7 +1007,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MCI204c
+  m_Text: MI204c
 --- !u!222 &762301909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1294,7 +1294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MCI201a
+  m_Text: MI201a
 --- !u!222 &1203656453
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2710,7 +2710,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MCI204b
+  m_Text: MI204b
 --- !u!222 &1924366983
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -80,7 +80,7 @@ public class QRController : MonoBehaviour
                 {
                     SceneManager.LoadScene("openDeck");
                 }
-                if (result.Text =="MCI201a")
+                if (result.Text =="MI201a")
                 {
                     SceneManager.LoadScene("MCI201a");
                 }
