@@ -43,17 +43,17 @@ public class Navigation : MonoBehaviour
 
     public void MCI201a()
     {
-        SceneManager.LoadScene("MCI201a");
+        SceneManager.LoadScene("MI101A");
     }
 
     public void MCI204b()
     {
-        SceneManager.LoadScene("MCI204b");
+        SceneManager.LoadScene("MI101B");
     }
 
     public void MCI204c()
     {
-        SceneManager.LoadScene("MCI204c");
+        SceneManager.LoadScene("MI101C");
     }
 
     public void QuitGame()
