@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class OptionsHandler : MonoBehaviour
 {
+
+    //This allows for the prefab to access navigation
+
     public GameObject m_options;
     public GameObject m_main;
 

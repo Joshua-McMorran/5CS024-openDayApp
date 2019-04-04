@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Navigation : MonoBehaviour
 {
+    //This is used so navigation can be accessed throughout the code.
+
     public void MainMenu()
     {
         SceneManager.LoadScene("MenuPage");
