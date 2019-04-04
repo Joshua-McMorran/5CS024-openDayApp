@@ -2575,7 +2575,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "There will be QR codes scatteres around the MI Alan Turing building. These
+  m_text: "There will be QR codes scattered around the MI Alan Turing building. These
     codes, when scanned with the built in QR scanner in this app will unlock bonus
     content and information for you. \nDon't be afraid if you get stuck. There will
     be staff and helpers around to help you navigate the building.\nThe exercise is
@@ -2662,11 +2662,11 @@ MonoBehaviour:
     lineCount: 19
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:

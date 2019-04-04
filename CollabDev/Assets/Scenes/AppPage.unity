@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 115868949}
   - component: {fileID: 115868948}
   m_Layer: 5
-  m_Name: MCI204b
+  m_Name: MI101B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1484,7 +1484,7 @@ GameObject:
   - component: {fileID: 1448813443}
   - component: {fileID: 1448813442}
   m_Layer: 5
-  m_Name: MCI201a
+  m_Name: MI101A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2811,7 +2811,7 @@ GameObject:
   - component: {fileID: 2011917324}
   - component: {fileID: 2011917323}
   m_Layer: 5
-  m_Name: MCI204c
+  m_Name: MI101C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

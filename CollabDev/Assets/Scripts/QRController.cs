@@ -80,17 +80,17 @@ public class QRController : MonoBehaviour
                 {
                     SceneManager.LoadScene("openDeck");
                 }
-                if (result.Text =="MI201a")
+                if (result.Text =="MI201A")
                 {
-                    SceneManager.LoadScene("MCI201a");
+                    SceneManager.LoadScene("MI101A");
                 }
-                if (result.Text =="MCI204b")
+                if (result.Text =="MI101B")
                 {
-                    SceneManager.LoadScene("MCI204b");
+                    SceneManager.LoadScene("MI101B");
                 }
-                if (result.Text == "MCI201C")
+                if (result.Text == "MI101C")
                 {
-                    SceneManager.LoadScene("MCI204c");
+                    SceneManager.LoadScene("MI101c");
                 }
                 else
                 {
