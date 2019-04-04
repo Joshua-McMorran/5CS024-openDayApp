@@ -14,6 +14,7 @@ public class QRController : MonoBehaviour
 
     public RawImage background;
     public AspectRatioFitter fit;
+    public int QRcount = 0;
 
 
 
@@ -55,7 +56,7 @@ public class QRController : MonoBehaviour
     {
 
 
-        int QRcount = 0;
+        
         if (!camAvailable)
             return;
 
@@ -88,7 +89,7 @@ public class QRController : MonoBehaviour
                     SceneManager.LoadScene("openDeck");
                     QRcount++;
                 }
-                if (result.Text =="MI201A")
+                if (result.Text =="MI101A")
                 {
                     SceneManager.LoadScene("MI101A");
                     QRcount++;
@@ -104,9 +105,9 @@ public class QRController : MonoBehaviour
                     SceneManager.LoadScene("MI101c");
                     QRcount++;
                 }
-                if (result.Text == "friendsCode")
+                if (result.Text == "finalCode")
                 {
-                    SceneManager.LoadScene("AppPage");
+                    SceneManager.LoadScene("finalPage");
                     QRcount++;
                 }
                 if (QRcount == 6)

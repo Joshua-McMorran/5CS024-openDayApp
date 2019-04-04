@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/QR-Reader.unity
     guid: d0cb6b29d5b0890419c069045a76f677
   - enabled: 1
-    path: Assets/Scenes/Template.unity
-    guid: a304518897c85ca46a623ae3e5dfed5e
-  - enabled: 1
     path: Assets/Scenes/PersonalDetails.unity
     guid: 505b2514df315554d9de9a4289565fc5
   - enabled: 1
@@ -35,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MI101C.unity
     guid: ecec24e8e2ee8b54191462546e410b89
+  - enabled: 1
+    path: Assets/Scenes/finalPage.unity
+    guid: 5d9e318f1d225e0449b53e2a0f9f6e20
+  - enabled: 1
+    path: Assets/Scenes/BuddyQR.unity
+    guid: 04123fb1a1b3ee047b8e806f497798db
   m_configObjects: {}
