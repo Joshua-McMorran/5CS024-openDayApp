@@ -53,6 +53,9 @@ public class QRController : MonoBehaviour
 
     private void Update()
     {
+
+
+        int QRcount = 0;
         if (!camAvailable)
             return;
 
@@ -78,22 +81,37 @@ public class QRController : MonoBehaviour
                 if (result.Text == "IM GAY")
                 {
                     SceneManager.LoadScene("CODEA");
+                    QRcount++;
                 }
                 if(result.Text == "openDeck")
                 {
                     SceneManager.LoadScene("openDeck");
+                    QRcount++;
                 }
                 if (result.Text =="MI201A")
                 {
                     SceneManager.LoadScene("MI101A");
+                    QRcount++;
                 }
                 if (result.Text =="MI101B")
                 {
                     SceneManager.LoadScene("MI101B");
+                    QRcount++;
+
                 }
                 if (result.Text == "MI101C")
                 {
                     SceneManager.LoadScene("MI101c");
+                    QRcount++;
+                }
+                if (result.Text == "friendsCode")
+                {
+                    SceneManager.LoadScene("AppPage");
+                    QRcount++;
+                }
+                if (QRcount == 6)
+                {
+                    SceneManager.LoadScene("finalPage");
                 }
                 else
                 {

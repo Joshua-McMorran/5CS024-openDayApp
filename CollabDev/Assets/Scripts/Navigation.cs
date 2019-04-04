@@ -58,6 +58,11 @@ public class Navigation : MonoBehaviour
         SceneManager.LoadScene("MI101C");
     }
 
+    public void BuddyQR()
+    {
+        SceneManager.LoadScene("BuddyQR");
+    }
+
     public void QuitGame()
     {
         //Gives feedback for the method working
