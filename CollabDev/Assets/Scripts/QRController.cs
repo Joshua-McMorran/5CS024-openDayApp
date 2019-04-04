@@ -15,6 +15,9 @@ public class QRController : MonoBehaviour
     public RawImage background;
     public AspectRatioFitter fit;
 
+
+
+    //To detect if there is a back camera
     private void Start()
     {
         defaultBackground = background.texture;
@@ -106,10 +109,12 @@ public class QRController : MonoBehaviour
         //background.rectTransform.localEulerAngles = new Vector3(0, 0, );
     }
 
+    
+    //Delay on the scanner
     IEnumerator SlowDown()
     {
         canScanQR = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         canScanQR = true;
     }
 }
