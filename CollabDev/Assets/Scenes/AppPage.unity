@@ -1086,7 +1086,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MI204c
+  m_Text: MI101C
 --- !u!222 &762301909
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1373,7 +1373,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MI201a
+  m_Text: MI101A
 --- !u!222 &1203656453
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 0.95686275, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.95686275, a: 0.1254902}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2424,7 +2424,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Navigation
+  m_Text: <
 --- !u!222 &1787367380
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2756,8 +2756,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 109.97461, y: -15}
-  m_SizeDelta: {x: -220.05, y: 30}
+  m_AnchoredPosition: {x: 135, y: -15}
+  m_SizeDelta: {x: -270, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1899377610
 MonoBehaviour:
@@ -2825,7 +2825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.32941177, g: 0.7294118, b: 0.6313726, a: 0.13333334}
+  m_Color: {r: 0.32941177, g: 0.7294118, b: 0.6313726, a: 0.039215688}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2919,7 +2919,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MI204b
+  m_Text: MI101B
 --- !u!222 &1924366983
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2978,7 +2978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 0.95686275, a: 1}
+  m_Color: {r: 0.9843138, g: 0.8470589, b: 0.19607845, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
