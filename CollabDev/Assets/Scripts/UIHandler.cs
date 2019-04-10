@@ -26,7 +26,6 @@ public class UIHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(0.003f);
         nav.fillAmount = nav.fillAmount + i;
-        BTwo.fillAmount = BTwo.fillAmount + i;
         if (nav.fillAmount<1 && nav.fillAmount>0)
         {
             StartCoroutine(startSlide(i));
